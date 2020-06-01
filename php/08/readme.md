@@ -23,8 +23,27 @@
 
 ## 3. 超全局数组
 
-`GLOBALS` 包含以下所有
+在函数外部和内部 都能使用的变量,就是超全局数组
 
+`GLOBALS` 包含以下所有
+```php
+$_GET		通过 URL 参数传递给脚本的变量数组
+$_POST		通过 HTTP post 方式传递的变量数组
+$_FILES 	文件上传的信息
+$_SERVER	服务器的执行环境等信息
+$_COOKIE	通过 HTTP cookies 的方式传递的变量数组,用于存储一些用户的登录信息
+$_SESSION	当前脚本可用的 session 变量数组,一般用于存储共用信息
+$_ENV		存储的是系统环境变量信息
+$_REQUEST	存储着 get/post/cookie 传来的信息
+
+
+
+
+
+
+
+
+```
 
 
 
